@@ -1,0 +1,28 @@
+
+Follow these steps: after creating server try these steps..
+
+Create openssl certificate using bash terminal
+
+$ openssl genrsa -out key.pem
+$ openssl req -new -key key.pem -out csr.pem
+$ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+$ rm csr.pem
+
+https://www.golinuxcloud.com/create-https-server-with-node-js
+
+
+
+Bind https to expressJS
+
+https://stackoverflow.com/questions/5998694/how-to-create-an-https-server-in-node-js
+
+How to access env variable file 
+https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786
+
+Config env file using dotenv
+
+https://tecadmin.net/using-multiple-env-files-in-nodejs/#:~:text=env%60%20files%20for%20each%20environment, and%20the%20NODE_ENV%20environment%20variable.&text=%2F%2F%20config.js-, const%20dotenv%20%3D%20require('dotenv')%3B, dotenv.
+
+Set env variable using package.json in windows and mac
+https://stackoverflow.com/questions/25112510/how-to-set-environment-variables-from-within-package-json
+

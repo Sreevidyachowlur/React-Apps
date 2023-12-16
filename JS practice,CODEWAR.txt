@@ -1,0 +1,177 @@
+JS practice,CODEWAR
+
+//1
+//create variable to store 10 and change the variable value to 12 print the variable?
+// 2
+// create a function name as operation pass 3 arguments wr 1st 2 arguments are the values 3rd shd be operator 
+// ex: +,-,>,<,/,%. perform the action and return the result.
+//call the function get result and store it into variable and print the variable to see output.
+
+4
+write a function to accept array as argument return total lenght of array 
+call that function by passing array as parameter and console the output
+
+5 write a function to accept list of names in array format as argument and return an array with all names in upper case
+
+6
+write a function to accept 2 arguments: 1st to be list of object array having property name and status-Offline or Online,2nd argument should be the key(name) return status of matching name
+var a=[{sree:'offline'},{viddu:'online'},{sandeep:'online'}];
+
+7
+write a function to accept sentence as parameter,return total word count in the sentence
+
+8
+write a function to accept "hippopotamus" return total count of each character
+output format: {h:1,i:1,p:3,o:2,t:1,a:1,m:1,u:1, s:1}
+
+9
+write a function to accept ['how','are','you'] as input return "how are you"
+
+
+10
+write a function to accept string as argument and return all vovel letters from the string
+
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string. Input Output '45385593107843568' '01011110001100111' ,'509321967506747' '101000111101101
+
+The first input array is the key to the correct answers to an exam, like ["a", "a", "b", "d"]. The second one contains a student's submitted answers. The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer, represented as an empty string (in C the space character is used). If the score < 0, return 0. Input Output ["a", "a", "b", "b"] ["a", "c", "b", "d"] 6 ["b", "c", "b", "a"] ["", "a", "a", "c"] 0
+
+Your function takes two arguments:
+current father's age (years)
+current age of his son (years)
+Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+
+Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+[Make sure you type the exact thing I wrote or the program may not execute properly]
+
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+Kids drink toddy.
+Teens drink coke.
+Young adults drink beer.
+Adults drink whisky.
+Make a function that receive age, and return what they drink.
+Rules:
+Children under 14 old.
+Teens under 18 old.
+Young under 21 old.
+Adults have 21 or more.
+
+You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not. The input values are always positive.
+
+1 < 2 < 3 === true right? but could
+3 < 2 < 1 === true too??
+Here's your puzzle: Write a function greaterThanLessThan that takes three arguments, a, b, and c, and returns a boolean (true or false), such that:
+greaterThanLessThan(1, 2 3) === true
+
+and
+greaterThanLessThan(3, 2 1) === true
+
+But also
+graterThanLessThan(-3, -2, -1) == false
+
+with more examples on the expected behavior in the test cases.
+Hints
+Arguments do not necessarily have to be in strict ascending or descending order, as indicated by the example test cases.
+Check out the included test cases - not all arguments are going to return true! It's up to you to figure out which ones do and which ones don't.
+This challenge is a LOT easier than it might seem at first. Don't focus too much on building functions - just pay attention to precedence.
+-----------
+
+Write a function, gooseFilter / goose-filter / goose_filter / GooseFilter, that takes an array of strings as an argument and returns a filtered array containing the same elements but with the 'geese' removed.
+
+The geese are any strings in the following array, which is pre-populated in your solution:
+
+geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+For example, if this array were passed as an argument:
+
+["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]
+Your function would return the following array:
+
+["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
+The elements in the returned array should be in the same order as in the initial array passed to your function, albeit with the 'geese' removed. Note that all of the strings will be in the same case as those provided, and some elements may be repeated.V
+------------
+
+Issue
+Looks like some hoodlum plumber and his brother has been running around and damaging your stages again.
+
+The pipes connecting your level's stages together need to be fixed before you receive any more complaints. Each pipe should be connecting, since the levels ascend, you can assume every number in the sequence after the first index will be greater than the previous and that there will be no duplicates.
+
+Task
+Given the a list of numbers, return the list so that the values increment by 1 for each index up to the maximum value.
+
+Example
+Input: 1,3,5,6,7,8
+
+Output: 1,2,3,4,5,6,7,8
+
+
+Given an array of numbers (in string format), you must return a string. The numbers correspond to the letters of the alphabet in reverse order: a=26, z=1 etc. You should also account for '!', '?' and ' ' that are represented by '27', '28' and '29' respectively.
+All inputs will be valid.
+
+Summation
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+For example:
+summation(2) -> 3
+1 + 2
+
+summation(8) -> 36
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+
+--------------
+Your start-up's BA has told marketing that your website has a large audience in Scandinavia and surrounding countries. Marketing thinks it would be great to welcome visitors to the site in their own language. Luckily you already use an API that detects the user's location, so this is an easy win.
+The Task
+Think of a way to store the languages as a database (eg an object). The languages are listed below so you can copy and paste!
+Write a 'welcome' function that takes a parameter 'language' (always a string), and returns a greeting - if you have it in your database. It should default to English if the language is not in the database, or in the event of an invalid input.
+The Database
+english: 'Welcome',
+czech: 'Vitejte',
+danish: 'Velkomst',
+dutch: 'Welkom',
+estonian: 'Tere tulemast',
+finnish: 'Tervetuloa',
+flemish: 'Welgekomen',
+french: 'Bienvenue',
+german: 'Willkommen',
+irish: 'Failte',
+italian: 'Benvenuto',
+latvian: 'Gaidits',
+lithuanian: 'Laukiamas',
+polish: 'Witamy',
+spanish: 'Bienvenido',
+swedish: 'Valkommen',
+welsh: 'Croeso'
+
+Possible invalid inputs include:
+IP_ADDRESS_INVALID - not a valid ipv4 or ipv6 ip address
+IP_ADDRESS_NOT_FOUND - ip address not in the database
+IP_ADDRESS_REQUIRED - no ip address was supplied
+------------
+Implement a function which convert the given boolean value into its string representation.
+Note: Only valid inputs will be given.
+
+-----------
+A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+Return True if yes, False otherwise :)
+
+-----
+It's bonus time in the big city! The fatcats are rubbing their paws in anticipation... but who is going to make the most money?
+Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java and Julia), "$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
+
+----------
+Your task is to create a function that does four basic mathematical operations.
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
+---
+Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+setAlarm(true, true) -> false
+setAlarm(false, true) -> false
+setAlarm(false, false) -> false
+setAlarm(true, false) -> true
+
+
+
+
